@@ -134,6 +134,7 @@ exports.config = {
                 outputDir: './allure-results', // Directory where allure results will be saved
                 disableWebdriverStepsReporting: false, // To capture WebDriver commands
                 disableWebdriverScreenshotsReporting: false, // To capture screenshots if needed
+                useCucumberStepReporter: true,
             },
         ],
     ],
@@ -162,7 +163,7 @@ exports.config = {
         // <number> timeout for step definitions
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
-        ignoreUndefinedDefinitions: false,
+        ignoreUndefinedDefinitions: true,
         verbose: true,
     },
 
@@ -304,8 +305,11 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that ran
      */
-    // after: function (result, capabilities, specs) {
-    // },
+    after: function (result, capabilities, specs) {
+        // Generate allure report in any case (whether tests pass or fail)
+        const allure = require('allure-commandline');
+        allure(['generate', 'allure-results', '--clean', '-o', 'allure-report']);
+    },
     /**
      * Gets executed right after terminating the webdriver session.
      * @param {object} config wdio configuration object

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[contains(@class, 'swatch-attribute size')]//div[@option-label='M']"
+}

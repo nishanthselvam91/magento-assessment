@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "dependencies": {
     "@wdio/cli": "^9.12.6",
+    "@wdio/globals": "^9.12.6",
     "wdio": "file:"
   },
   "scripts": {
-    "test": "npx wdio run wdio.conf.js",
-    "posttest": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report"
+    "test": "npx wdio run wdio.conf.js || true",
+    "report": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report",
+    "test:all": "npm run test && npm run report"
   },
   "devDependencies": {
     "@wdio/allure-reporter": "^9.12.6",

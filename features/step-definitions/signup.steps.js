@@ -3,7 +3,7 @@ const { Given, When, Then } = require('@wdio/cucumber-framework');
 const SignupPage = require('../../pageobjects/signup.page');
 const { expect } = require('@wdio/globals');
 
-Given(/^I am on the signup page$/, async () => {
+Given('I am on the signup page', async () => {
     console.log('Navigating to signup page...');
     await SignupPage.open();
 });

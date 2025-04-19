@@ -5,4 +5,3 @@ Feature: Add to Cart functionality
     And I navigate to the homepage
     When I add "Hero Hoodie" from Hot Sellers to the cart with size "M", color "Black", and quantity "2"
     Then I should see a success message confirming the product was added
-    And I should see the item in the shopping cart

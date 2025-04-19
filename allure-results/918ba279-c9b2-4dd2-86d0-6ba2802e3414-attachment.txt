@@ -1,0 +1,53 @@
+{
+  "script": "<script> [152 bytes]",
+  "args": [
+    {
+      "sessionId": "a472e7a59fbffecefb8c2c978817e717",
+      "elementId": "f.75277E7E74CA162C0C4373249D811AC6.d.D0397A1C2CDCF0C68EC622C611B8B492.e.292",
+      "element-6066-11e4-a52e-4f735466cecf": "f.75277E7E74CA162C0C4373249D811AC6.d.D0397A1C2CDCF0C68EC622C611B8B492.e.292",
+      "locator": {
+        "type": "css",
+        "value": "[name=\"ko_unique_1\"]"
+      },
+      "selector": "[name=\"ko_unique_1\"]",
+      "parent": {
+        "sessionId": "a472e7a59fbffecefb8c2c978817e717",
+        "capabilities": {
+          "acceptInsecureCerts": false,
+          "browserName": "chrome",
+          "browserVersion": "135.0.7049.96",
+          "chrome": {
+            "chromedriverVersion": "135.0.7049.96 (3504c18e3661c2f9d5de0685ccca27f593ad69c5-refs/branch-heads/7049@{#1837})",
+            "userDataDir": "C:\\Users\\prave\\AppData\\Local\\Temp\\scoped_dir17180_1682804655"
+          },
+          "fedcm:accounts": true,
+          "goog:chromeOptions": {
+            "debuggerAddress": "localhost:61291"
+          },
+          "networkConnectionEnabled": false,
+          "pageLoadStrategy": "normal",
+          "platformName": "windows",
+          "proxy": {},
+          "setWindowRect": true,
+          "strictFileInteractability": false,
+          "timeouts": {
+            "implicit": 0,
+            "pageLoad": 300000,
+            "script": 30000
+          },
+          "unhandledPromptBehavior": "ignore",
+          "webSocketUrl": "ws://localhost:61285/session/a472e7a59fbffecefb8c2c978817e717",
+          "webauthn:extension:credBlob": true,
+          "webauthn:extension:largeBlob": true,
+          "webauthn:extension:minPinLength": true,
+          "webauthn:extension:prf": true,
+          "webauthn:virtualAuthenticators": true,
+          "wdio:driverPID": 17180
+        }
+      },
+      "index": 0,
+      "isReactElement": false,
+      "isShadowElement": false
+    }
+  ]
+}

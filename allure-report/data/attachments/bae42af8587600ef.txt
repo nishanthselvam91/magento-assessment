@@ -1,0 +1,22 @@
+{
+  "actions": [
+    {
+      "id": "action1",
+      "type": "wheel",
+      "parameters": {},
+      "actions": [
+        {
+          "type": "scroll",
+          "x": -1240,
+          "y": 814,
+          "deltaX": 0,
+          "deltaY": 0,
+          "duration": 0,
+          "origin": {
+            "element-6066-11e4-a52e-4f735466cecf": "f.168E901FA41B5849F22468A36C1BF788.d.C735BBB8A14684FCAAB98AC70B58B5AA.e.163"
+          }
+        }
+      ]
+    }
+  ]
+}
